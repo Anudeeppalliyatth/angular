@@ -1,0 +1,24 @@
+<h1 style="text-align: center;">LIST OF EMPLOYEES</h1>
+<div class="container">
+<table class="table table-bordered">
+    <tr >
+      <th>
+        NAME
+        
+      <th>
+        DELETE
+      </th>
+      <th>
+        UPDATE
+      </th>
+    </tr>
+    <tr *ngFor="let employee of employeeList">
+        <td><button type="button" class="btn btn-link" (click)="details(employee.id)">{{employee.name | uppercase}}</button></td>
+       <td> <button type="button" class="btn btn-danger" (click)="deleteEmployee(employee.id)">DELETE</button></td>
+       <td><button type="button" class="btn btn-success" (click)="updateEmployee(employee.id)">UPDATE</button></td>
+    </tr>
+  
+  </table>
+  <br>
+  <button (click)="createEmployee()" class="btn btn-primary" >NEW ENTRY</button>
+  </div>

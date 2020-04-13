@@ -1,0 +1,35 @@
+<br><h3 style="text-align: center;">Enter the Employee Details</h3>
+<div class="container">
+<form id="formNewEmployee" name='formNewEmployee' #employee="ngForm" (ngSubmit)="addNewEmployee(employee.value)">
+  
+
+    <br>
+
+    <div class="form-group">
+      <label>Name:</label>
+      <input class="form-control" type="text" name="name" id="name" placeholder="Full Name" ngModel>
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <label>DOB:</label>
+      <input class="form-control" type="date" name="dob" id="dob" placeholder="Date of Birth" ngModel>
+    </div>
+    <br>
+
+
+    <div class="form-group">
+      <label>Place:</label>
+      <input class="form-control" type="text" name="place" id="place" placeholder="Place of Residence" ngModel>
+    </div>
+    <br>
+
+   
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+
+  </form>
+  <div *ngIf="isSubmit">
+  <h3 class="text-success" *ngIf="isAdded">Employee Added</h3>
+  </div>

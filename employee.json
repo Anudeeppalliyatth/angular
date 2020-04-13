@@ -1,0 +1,28 @@
+{
+  "employee": [
+    {
+      "name": "Anudeep",
+      "dob": "1998-02-18",
+      "place": "Macheri",
+      "id": 6
+    },
+    {
+      "name": "Nivin",
+      "dob": "2020-04-29",
+      "place": "chakkarakal",
+      "id": 7
+    },
+    {
+      "name": "anurag",
+      "dob": "1997-07-27",
+      "place": "Caltex",
+      "id": 8
+    },
+    {
+      "name": "Bithun",
+      "dob": "1997-02-23",
+      "place": "Thalessary",
+      "id": 9
+    }
+  ]
+}
